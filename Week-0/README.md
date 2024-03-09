@@ -36,7 +36,7 @@ RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set
    1. C code for 4 bit Counter
 
 ```
-//#include <stdio.h>
+#include <stdio.h>
 #include <time.h>
 
 void delay(int n) {
@@ -69,9 +69,9 @@ int main()
 ![Counter](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/b8d0930e-dd86-4213-96c3-462c51b6f275)
 
    ## **Matric Multiplication in 'C':**
-   1. C code for 2D Matrix Multiplication
-      ```
-      // C program to multiply two matrices
+C code for 2D Matrix Multiplication
+```
+// C program to multiply two matrices
 
 #include <stdio.h>
 #include <stdlib.h>
