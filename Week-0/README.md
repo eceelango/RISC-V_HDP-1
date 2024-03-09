@@ -34,7 +34,9 @@ RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set
 
   ## **Counter Program in 'C':**
    1. C code for 4 bit Counter
-      //#include <stdio.h>
+
+'''
+//#include <stdio.h>
 #include <time.h>
 
 void delay(int n) {
@@ -60,7 +62,7 @@ int main()
         }
 		delay(500000);   // delay by 0.5 microseconds
 	}
-}
+}'''
    3. Implemented a 4 bit counter in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
    4. Explored compiler handling of control flow and variable manipulation tasks.
 ![Counter](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/b8d0930e-dd86-4213-96c3-462c51b6f275)
