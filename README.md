@@ -2,7 +2,7 @@
 
 https://www.vlsisystemdesign.com/hdp_riscv/
 
-Understanding RISC-V
+	Understanding RISC-V
 
 	Overall design of application
 
