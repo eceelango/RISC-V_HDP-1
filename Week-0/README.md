@@ -35,7 +35,7 @@ RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set
   ## **Counter Program in 'C':**
    1. C code for 4 bit Counter
 
-'''
+```
 //#include <stdio.h>
 #include <time.h>
 
@@ -62,14 +62,88 @@ int main()
         }
 		delay(500000);   // delay by 0.5 microseconds
 	}
-}'''
+}
+```
    3. Implemented a 4 bit counter in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
    4. Explored compiler handling of control flow and variable manipulation tasks.
 ![Counter](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/b8d0930e-dd86-4213-96c3-462c51b6f275)
 
    ## **Matric Multiplication in 'C':**
-   1. Implemented a 2D MAtrix Multiplication in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
-   2. Explored compiler handling of control flow and variable manipulation tasks.
+   1. C code for 2D Matrix Multiplication
+      ```
+      // C program to multiply two matrices
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Edit MACROs here, according to your Matrix Dimensions for
+// mat1[R1][C1] and mat2[R2][C2]
+#define R1 2 // number of rows in Matrix-1
+#define C1 2 // number of columns in Matrix-1
+#define R2 2 // number of rows in Matrix-2
+#define C2 2 // number of columns in Matrix-2
+
+void mulMat(int mat1[][C1], int mat2[][C2])
+{
+	int rslt[R1][C2];
+
+	printf("Multiplication of given two matrices is:\n");
+
+    clock_t start_time, end_time;
+
+    start_time = clock() ; 
+
+	for (int i = 0; i < R1; i++) {
+		for (int j = 0; j < C2; j++) {
+			rslt[i][j] = 0;
+
+			for (int k = 0; k < R2; k++) {
+				rslt[i][j] += mat1[i][k] * mat2[k][j];
+			}
+
+			printf("%d\t", rslt[i][j]);
+		}
+
+		printf("\n");
+	}
+
+    end_time = clock() ; 
+    printf("Total time taken in seconds %d:\n", end_time - start_time);
+
+}
+
+// Driver code
+int main()
+{
+	// R1 = 4, C1 = 4 and R2 = 4, C2 = 4 (Update these
+	// values in MACROs)
+	int mat1[R1][C1] = { { 1, 1 },
+						{ 2, 2 } };
+
+	int mat2[R2][C2] = { { 1, 1 },
+						{ 2, 2 } };
+
+
+	if (C1 != R2) {
+		printf("The number of columns in Matrix-1 must be "
+			"equal to the number of rows in "
+			"Matrix-2\n");
+		printf("Please update MACROs value according to "
+			"your array dimension in "
+			"#define section\n");
+
+		exit(EXIT_FAILURE);
+	}
+
+	// Function call
+	mulMat(mat1, mat2);
+
+	return 0;
+}
+```
+   3. Implemented a 2D MAtrix Multiplication in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
+   4. Explored compiler handling of control flow and variable manipulation tasks.
 ![Matrix](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/03350bb5-7c1b-40a0-b972-9b2477cda923)
 
 
