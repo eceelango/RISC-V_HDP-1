@@ -1,4 +1,4 @@
-#__**RISC-V-HARDWARE DESIGN PROGRAM **__
+**#RISC-V-HARDWARE DESIGN PROGRAM**
 
 https://www.vlsisystemdesign.com/hdp_riscv/
 
