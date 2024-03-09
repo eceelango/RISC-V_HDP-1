@@ -40,6 +40,7 @@ RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set
    **Matric Multiplication in 'C':**
    1. Implemented a 2D MAtrix Multiplication in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
    2. Explored compiler handling of control flow and variable manipulation tasks.
-![Matrix](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/7cbe7c02-a640-45b4-b161-d4efde0e7ae1)
+![Matrix](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/03350bb5-7c1b-40a0-b972-9b2477cda923)
+
 
 
