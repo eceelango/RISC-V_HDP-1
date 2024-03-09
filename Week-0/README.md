@@ -14,4 +14,7 @@ https://www.virtualbox.org/wiki/Downloads
 Successfully Installed
 ![image](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/2819d14d-ab24-4137-b4b4-45ab6a79ba1a)
 ![image](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/37f00671-477d-4af8-a96f-608165893382)
+Modifyied Hostname in Virtual Machine
+![image](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/4061cdd7-96b7-4a26-afda-14ea9c71e8cc)
+
 
