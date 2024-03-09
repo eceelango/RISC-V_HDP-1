@@ -14,6 +14,8 @@ virtualization software. Here are the steps to open a VDI file in Windows using 
 already. You can download it from the official website:
 https://www.virtualbox.org/wiki/Downloads
 
+**Find the Steps to Steps to open VDI. pdf in the repositry for installation**
+
 Successfully Installed
 ![image](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/2819d14d-ab24-4137-b4b4-45ab6a79ba1a)
 ![image](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/37f00671-477d-4af8-a96f-608165893382)
