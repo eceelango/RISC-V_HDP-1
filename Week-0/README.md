@@ -3,7 +3,9 @@
  compilers.
 2. It allows developers to explore how high-level code translates into low-level assembly instructions.
 3. Useful for understanding compiler behavior, optimizing code, and comparing compiler output.
+
 **RISC-V Assembly Instructions**
+
 RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set architecture (ISA) based on a simplified and modular design. It has different instruction formats, and assembly language instructions are represented by various opcodes. Below are some common RISC-V assembly instructions, along with brief explanations:
     **Arithmetic and Logical Instructions:**
         ADD rd, rs1, rs2: Adds the values in registers rs1 and rs2 and stores the result in register rd.
