@@ -35,8 +35,9 @@ RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set
    **Counter Program in 'C':**
    1. Implemented a 4 bit counter in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
    2. Explored compiler handling of control flow and variable manipulation tasks.
-
+/home/vsduser/Desktop/Counter.png
    **Matric Multiplication in 'C':**
    1. Implemented a 2D MAtrix Multiplication in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
    2. Explored compiler handling of control flow and variable manipulation tasks.
+/home/vsduser/Desktop/Matrix Multiplication.png
 
