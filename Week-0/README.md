@@ -33,8 +33,36 @@ RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set
         SLTI rd, rs1, imm: Sets rd to 1 if the value in register rs1 is less than the immediate value imm; otherwise, sets rd to 0.
 
   ## **Counter Program in 'C':**
-   1. Implemented a 4 bit counter in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
-   2. Explored compiler handling of control flow and variable manipulation tasks.
+   1. C code for 4 bit Counter
+      //#include <stdio.h>
+#include <time.h>
+
+void delay(int n) {
+    int us = n; // microseconds
+    clock_t start_time = clock();
+    while (clock() < start_time + (us * CLOCKS_PER_SEC / 1000000));
+}
+
+void display(int count) // Function to display the data on the four Led's
+{
+	printf("Count value is: %d\n", count);						
+}
+
+int main()
+{
+	int count = 0x00000000;
+	while (1)
+	{
+		display(count);
+		count++;
+        if(count==16){
+            count=0;
+        }
+		delay(500000);   // delay by 0.5 microseconds
+	}
+}
+   3. Implemented a 4 bit counter in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
+   4. Explored compiler handling of control flow and variable manipulation tasks.
 ![Counter](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/b8d0930e-dd86-4213-96c3-462c51b6f275)
 
    ## **Matric Multiplication in 'C':**
