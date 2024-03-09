@@ -1,4 +1,4 @@
-# **RISC-V-HARDWARE DESIGN PROGRAM**
+# **RISC-V-HARDWARE DESIGN TRAINING PROGRAM**
 
 https://www.vlsisystemdesign.com/hdp_riscv/
 
@@ -9,5 +9,4 @@ https://www.vlsisystemdesign.com/hdp_riscv/
 + Designing SoC using ChipCron Tool
 + Understanding and designing testbench
 + Verification via simulation
-
 
