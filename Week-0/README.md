@@ -15,19 +15,28 @@ RISC-V (Reduced Instruction Set Computing - V) is an open-source instruction set
         OR rd, rs1, rs2: Bitwise OR of the values in registers rs1 and rs2, storing the result in register rd.
         XOR rd, rs1, rs2: Bitwise XOR of the values in registers rs1 and rs2, storing the result in register rd.
 
-    ****Data Transfer Instructions:****
+    **Data Transfer Instructions:**
         LW rd, offset(rs1): Loads a 32-bit word from memory at the address (rs1 + offset) and stores it in register rd.
         SW rs2, offset(rs1): Stores the value in register rs2 to memory at the address (rs1 + offset).
 
-    ****Control Flow Instructions:****
+    **Control Flow Instructions:**
         JAL rd, offset: Jumps to the address (PC + offset) and stores the return address (PC + 4) in register rd.
         JALR rd, rs1, offset: Jumps to the address (rs1 + offset) and stores the return address (PC + 4) in register rd.
         BEQ rs1, rs2, offset: Branches to the address (PC + offset) if the values in registers rs1 and rs2 are equal.
         
-    ****Immediate Instructions:****
+    **Immediate Instructions:**
         ADDI rd, rs1, imm: Adds the immediate value imm to the value in register rs1 and stores the result in register rd.
         LUI rd, imm: Loads the immediate value imm into the upper 20 bits of register rd.
 
-    ****Comparison Instructions:****
+    **Comparison Instructions:**
         SLT rd, rs1, rs2: Sets rd to 1 if the value in register rs1 is less than rs2; otherwise, sets rd to 0.
         SLTI rd, rs1, imm: Sets rd to 1 if the value in register rs1 is less than the immediate value imm; otherwise, sets rd to 0.
+
+   **Counter Program in 'C':**
+   1. Implemented a 4 bit counter in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
+   2. Explored compiler handling of control flow and variable manipulation tasks.
+
+   **Matric Multiplication in 'C':**
+   1. Implemented a 2D MAtrix Multiplication in C code and analyzed assembly output for RISC-V 32 gcc and X86-G4 gcc 13.2.
+   2. Explored compiler handling of control flow and variable manipulation tasks.
+
