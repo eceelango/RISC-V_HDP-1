@@ -111,8 +111,55 @@ endmodule
 ```
 ## iVerilog Installation
 ![Screenshot from 2024-03-13 18-39-13](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/665a66ad-f486-42b1-b5ca-e0d65766a615)
+Below are the instructions for completing the assignment:
+Installing Iverilog on Ubuntu:
 
-`GTKwave installation commants  Daniel:~$ sudo apt install gtkwave`
+Icarus Verilog (Iverilog) is an open-source simulator that supports the Verilog hardware description language (HDL) and is commonly used in small-scale projects for digital circuit design and verification.
+
+    Go to the official Icarus Verilog GitHub repository. Select the V12-branch and download https://github.com/steveicarus/iverilog/tree/v12-branch?ref=circuitcove.com
+
+    Open a terminal window and navigate to the directory where the zip or tarball was downloaded. Then, unpack the tarball or unzip using the following command:
+
+    unzip iverilog-12-branch.zip
+
+    cd iverilog-12-branch
+
+    Run the autoconf script to generate the configure file using the following command:
+
+    sh ./autoconf.sh
+
+    Run the configure script using the following command:
+
+    ./configure
+
+    Build Icarus Verilog using the make command:
+
+    make
+
+    Install Icarus Verilog using the following command:
+
+    sudo make install
+
+## Installing Gtkwave on Ubuntu:
+
+    gtkwave is a viewer for VCD (Value Change Dump) files which are usually created by digital circuit simulators.
+
+    sudo apt-get update
+
+    sudo apt-get -y install gtkwave
+
+## Verifying the Verilog Code using iverilog and gtkwave:
+Install iverilog and gtkwave on your Ubuntu system (instructions provided). Compile the Verilog code using iverilog. Simulate the compiled Verilog code using vvp. Use gtkwave to visualize the simulation waveform and verify the functionality of the Verilog ALU.
+
+
+![Screenshot from 2024-03-13 21-41-58](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/3cf24a9c-254e-489f-b1c0-21e5644ef7ca)
+
+`Daniel:~/Desktop/HDL$ sudo apt install libcanberra-gtk-module`
+![2](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/075c20c5-c651-4393-96b2-2c03871a72c6)
+
+![Screenshot from 2024-03-13 21-48-23](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/8e3ec3c1-134d-4a48-9eac-b7b844d276ba)
+
+`Click ALU_tb in the GTKWAVE window, Types and signals will appear, from there drag each signal to 'signals' window to visualize the graph.
 
 
 
