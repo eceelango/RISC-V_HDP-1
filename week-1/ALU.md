@@ -47,66 +47,53 @@ int main() {
 
 ## ALU VERILOG CODE
 ```
-module alu(a,b,sel,result);
-        input [31:0] a;
-        input [31:0]b;
-        input [1:0]sel;
-        output reg [31:0] result;
+module ALU(
+    input [3:0] a, b,
+    input [2:0] op,
+    output reg [3:0] result
+);
 
-
-        always@(*)
-        begin
-                case(sel)
-                        2'b00 : result= a+b;
-                        2'b01 :result=a-b;
-                        2'b10 :result=a*b;
-                        2'b11 :result=a/b;
-                        default :result=32'b0;
-                endcase
-        end
+always @* begin
+    case (op)
+        3'b000: result = a + b;
+        3'b001: result = a - b;
+        3'b010: result = a * b;
+        3'b011: if (b != 0) result = a / b;
+                else result = 4'b0000;
+        3'b100: result = a | b;
+        3'b101: result = a ^ b;
+        default: result = 4'b0000;
+    endcase
+end
 
 endmodule
 ```
 ## VERILOG TEST BENCH TO TEST ALU
 ```
-module alu_tb();
+module ALU_tb();
 
-    // Inputs
-    reg [31:0]a;
-    reg [31:0]b;
-    reg[1:0]sel;
+    reg [3:0] a, b;
+    reg [2:0] op;
+    wire [3:0] result;
 
-    // Outputs
-    wire [31:0] result;
-
-    // Instantiate the Unit Under Test (UUT)
-    alu  uut (
+    ALU uut (
         .a(a),
         .b(b),
-        .sel(sel),
+        .op(op),
         .result(result)
     );
 
     initial begin
+        $dumpfile("ALU.vcd");
+        $dumpvars(1, ALU_tb);
 
-            $dumpfile("alu.vcd");
-             $dumpvars(1,alu_tb);
-
-        // Apply inputs.
-        a = 32'h0000000a;
-        b = 32'h00000001;
-        #50
-        sel=0;
-        #10
-        sel=2'b10;
-        #10
-        sel=2'b11;
-        #10
-        sel=2'b01;
-        #100
+        a = 4'b1011; b = 4'b1001; op = 3'b000; #10;
+        a = 4'b1100; b = 4'b1001; op = 3'b101; #10;
+        a = 4'b1001; b = 4'b1101; op = 3'b010; #10;
+        a = 4'b1101; b = 4'b1111; op = 3'b100; #10;
+        
         $finish;
     end
-
 endmodule
 ```
 ## iVerilog Installation
