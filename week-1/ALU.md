@@ -1,7 +1,8 @@
 # Design an 4-bit ALU in c code and verify it using gcc
 ## VIM Editor Installation
+![Screenshot from 2024-03-13 18-15-17](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/b92f2e78-28e4-40b6-affc-1b2361cece8d)
 
-![Uploading Matrix Multiplication.png…]()
+
 
 ## ALU C CODE
 
