@@ -112,5 +112,7 @@ endmodule
 ## iVerilog Installation
 ![Screenshot from 2024-03-13 18-39-13](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/665a66ad-f486-42b1-b5ca-e0d65766a615)
 
+`GTKwave installation commants  Daniel:~$ sudo apt install gtkwave`
+
 
 
