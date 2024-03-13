@@ -45,5 +45,28 @@ int main() {
 ```
 ![Screenshot from 2024-03-13 18-32-57](https://github.com/Daniel4bit/RISC-V_HDP/assets/65249875/fe58d6ff-67e1-49c3-904e-acaba335221e)
 
+## ALU VERILOG CODE
+```
+module alu(a,b,sel,result);
+        input [31:0] a;
+        input [31:0]b;
+        input [1:0]sel;
+        output reg [31:0] result;
+
+
+        always@(*)
+        begin
+                case(sel)
+                        2'b00 : result= a+b;
+                        2'b01 :result=a-b;
+                        2'b10 :result=a*b;
+                        2'b11 :result=a/b;
+                        default :result=32'b0;
+                endcase
+        end
+
+endmodule
+```
+
 
 
